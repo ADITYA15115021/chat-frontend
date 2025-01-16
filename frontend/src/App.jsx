@@ -15,7 +15,7 @@ function App() {
   const [socket, setSocket] = useState(null);
 
   useEffect(() => {
-      const ws = new WebSocket("ws://localhost:3000");
+      const ws = new WebSocket("wss://ak-backend1.xyz");
       
       ws.onopen = () => {
           console.log("WebSocket connected with state:", ws.readyState);
